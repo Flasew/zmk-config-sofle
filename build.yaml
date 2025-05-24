@@ -246,37 +246,47 @@ include:
   ### SPLITKB AURORA SOFLE START ###
   # nice!oled splitkb_aurora_sofle
   - board: nice_nano_v2
-    shield: splitkb_aurora_sofle_left nice_oled
+    shield: splitkb_aurora_sofle_left 
     cmake-args: -DCONFIG_ZMK_KEYBOARD_NAME=\"A_Sofle_Oled\"  -DCONFIG_ZMK_STUDIO=y -DCONFIG_ZMK_SLEEP=y -DCONFIG_ZMK_IDLE_TIMEOUT=60000
-    artifact-name: nice_splitkb_aurora_sofle_left_oled
+    artifact-name: nice_splitkb_aurora_sofle_left
     snippet: studio-rpc-usb-uart
   - board: nice_nano_v2
-    shield: splitkb_aurora_sofle_right nice_oled
+    shield: splitkb_aurora_sofle_right 
     cmake-args: -DCONFIG_ZMK_SLEEP=y -DCONFIG_ZMK_IDLE_TIMEOUT=60000
-    artifact-name: nice_splitkb_aurora_sofle_right_oled
+    artifact-name: nice_splitkb_aurora_sofle_right
 
   # peripheral_left
   - board: nice_nano_v2
-    shield: splitkb_aurora_sofle_left_peripheral nice_oled
+    shield: splitkb_aurora_sofle_left_peripheral 
     cmake-args: -DCONFIG_ZMK_SLEEP=y -DCONFIG_ZMK_IDLE_TIMEOUT=60000
-    artifact-name: nice_splitkb_aurora_sofle_left_peripheral_oled
+    artifact-name: nice_splitkb_aurora_sofle_left_peripheral
 
   # Xiao_Dongle
   - board: seeeduino_xiao_ble
-    shield: splitkb_aurora_sofle_dongle_xiao oled_adapter_seeeduino_xiao_ble_128x64 dongle_display
+    shield: splitkb_aurora_sofle_dongle_xiao oled_adapter_seeeduino_xiao_ble_128x64
     cmake-args: -DCONFIG_ZMK_KEYBOARD_NAME=\"A_SofleDongle_X\" -DCONFIG_ZMK_STUDIO=y -DCONFIG_ZMK_IDLE_TIMEOUT=60000
-    artifact-name: xiao_splitkb_aurora_sofle_dongle_xiao_oled
+    artifact-name: xiao_splitkb_aurora_sofle_dongle_xiao
     snippet: studio-rpc-usb-uart
 
   # ProMicro_Dongle
   - board: nice_nano_v2
-    shield: splitkb_aurora_sofle_dongle_pro_micro dongle_display
+    shield: splitkb_aurora_sofle_dongle_pro_micro
     cmake-args: -DCONFIG_ZMK_KEYBOARD_NAME=\"A_SofleDongle_P\"  -DCONFIG_ZMK_STUDIO=y -DCONFIG_ZMK_SLEEP=n -DCONFIG_ZMK_IDLE_TIMEOUT=60000
-    artifact-name: nice_splitkb_aurora_sofle_dongle_oled
+    artifact-name: nice_splitkb_aurora_sofle_dongle
+    snippet: studio-rpc-usb-uart
+
+  # Raytec_Dongle
+  - board: raytac_mdbt50q_rx
+    shield: splitkb_aurora_sofle_dongle_raytac
+    cmake-args: -DCONFIG_ZMK_KEYBOARD_NAME=\"A_SofleDongle_P\"  -DCONFIG_ZMK_STUDIO=y -DCONFIG_ZMK_SLEEP=n -DCONFIG_ZMK_IDLE_TIMEOUT=60000
+    artifact-name: raytac_splitkb_aurora_sofle_dongle
     snippet: studio-rpc-usb-uart
   ### SPLITKB AURORA SOFLE END ###
 
   ### SETTINGS_RESET START ###
+  - board: raytac_mdbt50q_rx
+    shield: settings_reset
+    artifact-name: raytac_settings_reset
   - board: nice_nano_v2
     shield: settings_reset
     artifact-name: nice_settings_reset
