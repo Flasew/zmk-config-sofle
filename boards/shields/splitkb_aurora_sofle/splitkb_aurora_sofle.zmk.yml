@@ -7,9 +7,7 @@ requires: [pro_micro]
 exposes: [i2c_oled]
 features:
   - keys
-  - display
   - encoder
-  - underglow
   - studio
 siblings:
   - splitkb_aurora_sofle_left
@@ -17,3 +15,4 @@ siblings:
   - splitkb_aurora_sofle_left_peripheral
   - splitkb_aurora_sofle_dongle_xiao
   - splitkb_aurora_sofle_dongle_pro_micro
+  - splitkb_aurora_sofle_dongle_raytec
