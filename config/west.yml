@@ -8,6 +8,8 @@ manifest:
     # nice_oled - nice_epaper - dongle_display!view - oled Adapter
     - name: mctechnology17
       url-base: https://github.com/mctechnology17
+    - name: rschenk
+      url-base: https://github.com/rschenk
   projects:
     - name: zmk
       remote: zmkfirmware
@@ -29,5 +31,10 @@ manifest:
     - name: zmk-oled-adapter
       remote: mctechnology17
       revision: main
+    - name: zmk-component-raytac-dongle
+      remote: rschenk
+      revision: main
+  self:
+    path: config
   self:
     path: config
