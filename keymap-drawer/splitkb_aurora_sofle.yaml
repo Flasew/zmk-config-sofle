@@ -166,7 +166,7 @@ layers:
   - F11
   - F12
   - {t: ▽, type: trans}
-  - {t: ▽, type: trans}
+  - MUTE
   - KP PLUS
   - '-'
   - '='
