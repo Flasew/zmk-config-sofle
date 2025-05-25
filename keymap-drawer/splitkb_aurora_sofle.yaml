@@ -68,8 +68,8 @@ layers:
   - BT 3
   - BT 4
   - BT 5
-  - {t: ▽, type: trans}
-  - {t: ▽, type: trans}
+  - Out USB
+  - Out BLE
   - {t: ▽, type: trans}
   - {t: ▽, type: trans}
   - {t: ▽, type: trans}
@@ -147,7 +147,7 @@ layers:
   - '9'
   - '0'
   - '~'
-  - F1
+  - {t: ▽, type: trans}
   - F2
   - F3
   - F4
@@ -159,7 +159,7 @@ layers:
   - →
   - →
   - {t: ▽, type: trans}
-  - F7
+  - {t: ▽, type: trans}
   - F8
   - F9
   - F10
