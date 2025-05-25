@@ -37,7 +37,7 @@ layers:
   - L
   - ;
   - ''''
-  - $$mdi:apple-keyboard-shift$$
+  - {t: ESCAPE, h: '$$mdi:apple-keyboard-shift$$'}
   - Z
   - X
   - C
@@ -59,8 +59,8 @@ layers:
   - {t: ENTER, h: '$$mdi:apple-keyboard-control$$'}
   - ␣
   - RAI
-  - {t: '$$mdi:apple-keyboard-command$$', h: '['}
-  - {t: '$$mdi:apple-keyboard-command$$', h: ']'}
+  - {t: '[', h: '$$mdi:apple-keyboard-command$$'}
+  - {t: ']', h: '$$mdi:apple-keyboard-option$$'}
   LOW:
   - BT CLR
   - BT 1
