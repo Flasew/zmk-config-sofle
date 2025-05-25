@@ -39,9 +39,7 @@
                           &kp LEFT_ALT  &kp LEFT_COMMAND  &mo 1   &kp BACKSPACE  &kp ESCAPE    &mt RCTRL ENTER  &kp SPACE  &mo 2   &mt RGUI LEFT_BRACKET  &mt RALT RIGHT_BRACKET
             >;
 
-            sensor-bindings =
-                <&inc_dec_kp UP_ARROW DOWN>,
-                <&inc_dec_kp LEFT RIGHT>;
+            sensor-bindings = <&inc_dec_kp UP DOWN>, <&inc_dec_kp LEFT RIGHT>;
         };
 
         lower_layer {
@@ -62,7 +60,9 @@
                           &trans        &trans        &trans         &trans        &trans    &trans  &trans        &trans        &trans    &trans
             >;
 
-            sensor-bindings = <&inc_dec_kp C_VOL_UP C_VOL_DN>;
+            sensor-bindings =
+                <&inc_dec_kp C_VOL_UP C_VOL_DN>,
+                <&inc_dec_kp K_SCROLL_DOWN K_SCROLL_UP>;
         };
 
         raise_layer {
@@ -83,7 +83,9 @@
                    &trans  &trans   &trans   &trans   &trans    &trans  &trans       &trans          &trans        &trans
             >;
 
-            sensor-bindings = <&inc_dec_kp C_VOL_UP C_VOL_DN>;
+            sensor-bindings =
+                <&inc_dec_kp C_VOL_UP C_VOL_DN>,
+                <&inc_dec_kp C_BRIGHTNESS_INC C_BRIGHTNESS_DEC>;
         };
 
         extra_1 { status = "reserved"; };
